@@ -1,0 +1,4 @@
+#Wed Feb 03 20:11:21 GMT+01:00 2021
+base.0=D\:\\cours\\m1\\API\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
