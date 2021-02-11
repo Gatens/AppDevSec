@@ -62,12 +62,6 @@ INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.INTERNET
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-firestore:22.0.2] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\50a5fb422d4fb5a83a557ce089712e14\jetified-firebase-firestore-22.0.2\AndroidManifest.xml:14:5-67
-MERGED from [com.google.firebase:firebase-firestore:22.0.2] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\50a5fb422d4fb5a83a557ce089712e14\jetified-firebase-firestore-22.0.2\AndroidManifest.xml:14:5-67
-	android:name
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:7:5-22:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\5cdc1e5dadc61a7f834fac4c956aa1d5\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -262,6 +256,10 @@ MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\Gatien\.gradle\caches\transfo
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\10a3513949333938587db48c8411373d\jetified-grpc-android-1.28.0\AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:22.0.2] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\50a5fb422d4fb5a83a557ce089712e14\jetified-firebase-firestore-22.0.2\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-firestore:22.0.2] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\50a5fb422d4fb5a83a557ce089712e14\jetified-firebase-firestore-22.0.2\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:22.0.2] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\50a5fb422d4fb5a83a557ce089712e14\jetified-firebase-firestore-22.0.2\AndroidManifest.xml:14:22-64
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
 ADDED from [com.google.firebase:firebase-firestore:22.0.2] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\50a5fb422d4fb5a83a557ce089712e14\jetified-firebase-firestore-22.0.2\AndroidManifest.xml:20:13-22:85
 	android:value

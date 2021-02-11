@@ -116,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
                         //AFFICHE TOUTES LES DONNEES
                         for(Post post : accounts) {
                             String content = "";
-                            ArrayList<String>test = new ArrayList<>();
                             /*String ID =post.getId();
                             String accountName=post.getAccountName();
                             String amount=post.getAmount();
@@ -125,10 +124,9 @@ public class MainActivity extends AppCompatActivity {
                             content += "Account name : " + post.getAccountName() + "\n";
                             content += "Amount : " + post.getAmount() + "\n";
                             content += "Iban : " + post.getIban() + "\n\n";
-                            test.add(content);
                             DocumentReference documentReference = db.collection("users").document(userID);
                             Map<String, Object> user = new HashMap<>();
-                            user.put("content[k]", test);
+                            user.put("content", content);
                             db.collection("users").document(userID)
                                     .set(user, SetOptions.merge());
                             data.append(content);
