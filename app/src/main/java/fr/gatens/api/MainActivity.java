@@ -48,16 +48,7 @@ public class MainActivity extends AppCompatActivity {
                             return;
                         }
                         List<Post> accounts = response.body();
-                        /*
-                        // AFFICHE UN SEUL ELEMNT CHOISI DANS LA METHODE GET
-                        Post post=accounts.get(2);
-                        String content="";
-                        content+= "ID :"+ post.getId() +"\n";
-                        content += "Account name : " + post.getAccountName() + "\n";
-                        content += "Amount : " + post.getAmount() + "\n";
-                        content += "Iban : " + post.getIban() + "\n\n";
-                        data.append(content);
-                        */
+
                         //AFFICHE TOUTES LES DONNEES
                         for(Post post : accounts) {
                             String content = "";

@@ -21,7 +21,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class HomePage extends AppCompatActivity {
     EditText logEmail, logPassword;
     Button logButton, register;
-    TextView logtext;
 
     FirebaseAuth fAuth;
     ProgressBar logProgressBar;
