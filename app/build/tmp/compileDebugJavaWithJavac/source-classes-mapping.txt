@@ -1,6 +1,7 @@
 fr/gatens/api/MainActivity.java
  fr.gatens.api.MainActivity
  fr.gatens.api.MainActivity$1
+ fr.gatens.api.MainActivity$2
 fr/gatens/api/Post.java
  fr.gatens.api.Post
 fr/gatens/api/HomePage.java

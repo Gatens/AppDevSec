@@ -1886,6 +1886,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id refresh
 id reverseSawtooth
 id right
 id right_icon
@@ -1915,7 +1916,6 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
-id sendDB
 id shortcut
 id showCustom
 id showHome

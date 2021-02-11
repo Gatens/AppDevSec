@@ -37,7 +37,7 @@
         android:layout_height="61dp"
         android:hint="@string/logout"
         android:onClick="logout"
-        app:layout_constraintBottom_toTopOf="@+id/sendDB"
+        app:layout_constraintBottom_toTopOf="@+id/refresh"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,12 +45,12 @@
         app:layout_constraintVertical_bias="0.887" />
 
     <Button
-        android:id="@+id/sendDB"
-        android:layout_width="71dp"
-        android:layout_height="68dp"
+        android:id="@+id/refresh"
+        android:layout_width="95dp"
+        android:layout_height="78dp"
         android:layout_marginBottom="324dp"
-        android:hint="@string/sendDB"
-        android:onClick="dataSend"
+        android:hint="@string/refreshData"
+        android:onClick="refreshData"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
