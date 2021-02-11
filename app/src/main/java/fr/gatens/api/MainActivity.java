@@ -23,6 +23,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.SetOptions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -115,11 +116,21 @@ public class MainActivity extends AppCompatActivity {
                         //AFFICHE TOUTES LES DONNEES
                         for(Post post : accounts) {
                             String content = "";
-                            String datasave ="";
+                            ArrayList<String>test = new ArrayList<>();
+                            /*String ID =post.getId();
+                            String accountName=post.getAccountName();
+                            String amount=post.getAmount();
+                            String iban=post.getIban();*/
                             content+= "ID :"+ post.getId() +"\n";
                             content += "Account name : " + post.getAccountName() + "\n";
                             content += "Amount : " + post.getAmount() + "\n";
                             content += "Iban : " + post.getIban() + "\n\n";
+                            test.add(content);
+                            DocumentReference documentReference = db.collection("users").document(userID);
+                            Map<String, Object> user = new HashMap<>();
+                            user.put("content[k]", test);
+                            db.collection("users").document(userID)
+                                    .set(user, SetOptions.merge());
                             data.append(content);
                         }
 

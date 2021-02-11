@@ -2252,10 +2252,10 @@ int string path_password_eye_mask_strike_through 0x7f0e0070
 int string path_password_eye_mask_visible 0x7f0e0071
 int string path_password_strike_through 0x7f0e0072
 int string project_id 0x7f0e0073
-int string regLogButton 0x7f0e0074
-int string register 0x7f0e0075
-int string search_menu_title 0x7f0e0076
-int string sendDB 0x7f0e0077
+int string refreshData 0x7f0e0074
+int string regLogButton 0x7f0e0075
+int string register 0x7f0e0076
+int string search_menu_title 0x7f0e0077
 int string status_bar_notification_info_overflow 0x7f0e0078
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
