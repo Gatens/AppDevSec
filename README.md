@@ -25,5 +25,4 @@ To prevent attackers from gaining access to the source code we used the default 
 
 
 # Screenshots of your application
-![plot](https://github.com/Gatens/AppDevSec/edit/api/homepage.png)
-![plot](https://github.com/Gatens/AppDevSec/edit/api/display.png)
+![display](https://user-images.githubusercontent.com/62067263/107713019-b1603d00-6cca-11eb-8a79-eac6d2bf26ec.PNG)
