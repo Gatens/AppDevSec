@@ -36,6 +36,10 @@
         "source": "D:\\cours\\m1\\API\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\cours\\m1\\API\\app\\build\\intermediates\\res\\merged\\debug\\layout_register.xml.flat",
+        "source": "D:\\cours\\m1\\API\\app\\src\\main\\res\\layout\\register.xml"
+    },
+    {
         "merged": "D:\\cours\\m1\\API\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "D:\\cours\\m1\\API\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },

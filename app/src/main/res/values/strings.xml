@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">API</string>
     <string name="homepage">Login</string>
+    <string name="first_choice">Please login or register to enter in the App</string>
+    <string name="register">Register</string>
+    <string name="id_provider">Please provide your ID to register.</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="bankpage">Bonjour, Veuillez trouver ci dessous la totalite de vos comptes enregistres sur notre application.</string>
 </resources>

@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         data = findViewById(R.id.data);
+        View accountNumber = findViewById(R.id.account_id);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://6007f1a4309f8b0017ee5022.mockapi.io/api/m1/")
@@ -38,21 +41,26 @@ public class MainActivity extends AppCompatActivity {
                             return;
                         }
                         List<Post> accounts = response.body();
-                        for(Post post : accounts){
-                            String content="";
-                            if(post.getId()=="@id/account_id"){
-                                content+="Account name : "+post.getAccountName()+"\n";
-                                content+="Amount : "+post.getAmount()+"\n";
-                                content+="Iban : "+post.getIban()+"\n\n";
-                                data.append(content);
-                            }
-                            /*
-                            content+="ID : "+post.getId()+"\n";
-                            content+="Account name : "+post.getAccountName()+"\n";
-                            content+="Amount : "+post.getAmount()+"\n";
-                            content+="Iban : "+post.getIban()+"\n\n";
-                            data.append(content);*/
+                        /*
+                        // AFFICHE UN SEUL ELEMNT CHOISI DANS LA METHODE GET
+                        Post post=accounts.get(2);
+                        String content="";
+                        content+= "ID :"+ post.getId() +"\n";
+                        content += "Account name : " + post.getAccountName() + "\n";
+                        content += "Amount : " + post.getAmount() + "\n";
+                        content += "Iban : " + post.getIban() + "\n\n";
+                        data.append(content);
+                        */
+                        //AFFICHE TOUTES LES DONNEES
+                        for(Post post : accounts) {
+                            String content = "";
+                            content+= "ID :"+ post.getId() +"\n";
+                            content += "Account name : " + post.getAccountName() + "\n";
+                            content += "Amount : " + post.getAmount() + "\n";
+                            content += "Iban : " + post.getIban() + "\n\n";
+                            data.append(content);
                         }
+
                     }
 
                     @Override
