@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\3db90da3881798b27a4efd5da0f436cd\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\5cdc1e5dadc61a7f834fac4c956aa1d5\material-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\1b47bb01ecc6aa52d262badcce0bb4ed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -45,20 +45,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Gatien\.
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\14431331b7f685f3bce78815fed9a8c3\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\1f6b045666a31134b82a56c243bf4255\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\e53fbbcf78ffb18c7cd795b35d4efb56\jetified-protolite-well-known-types-17.1.1\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml
 		INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:2:11-69
@@ -69,7 +69,7 @@ MERGED from [com.google.firebase:firebase-firestore:22.0.2] C:\Users\Gatien\.gra
 	android:name
 		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:7:5-23:19
+ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:7:5-22:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\5cdc1e5dadc61a7f834fac4c956aa1d5\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\5cdc1e5dadc61a7f834fac4c956aa1d5\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Gatien\.gradle\caches\transforms-2\files-2.1\1b47bb01ecc6aa52d262badcce0bb4ed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -106,28 +106,24 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ga
 		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:13:9-41
-activity#fr.gatens.api.Register
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:14:9-55
-	android:name
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:14:19-43
 activity#fr.gatens.api.MainActivity
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:15:9-59
+ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:14:9-59
 	android:name
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:14:19-47
 activity#fr.gatens.api.HomePage
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:16:9-22:20
+ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:16:19-43
+		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:15:19-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from D:\cours\m1\API\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\cours\m1\API\app\src\main\AndroidManifest.xml

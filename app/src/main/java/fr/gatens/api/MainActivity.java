@@ -1,17 +1,32 @@
 package fr.gatens.api;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -21,11 +36,26 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     private TextView data;
+    FirebaseFirestore db;
+    FirebaseAuth fAuth;
+    String userID;
+    static String endpoint;
+    Button sendDB;
+
+    public static String getEndpoint() {
+        return endpoint;
+    }
 
     public void logout(View view){
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
+    public void dataSend(View view){
+        DocumentReference documentReference = db.collection("users").document(userID);
+        HashMap<String, Object> user = new HashMap<>();
+        user.put("content", data );
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +63,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         data = findViewById(R.id.data);
+        fAuth=FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+        sendDB=findViewById(R.id.sendDB);
 
+        userID =fAuth.getCurrentUser().getUid();
+        /*
+        DocumentReference documentReference = db.collection("users").document(userID);
+        documentReference.addSnapshotListener (this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                String endpoint = DocumentSnapshot.getString("endpoint");
+            }
+        });*/
+
+        /*
+        DocumentReference docRef = db.collection("users").document(userID);
+        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document.exists()) {
+                        endpoint= document.getString("endpoint");
+                    }
+                }
+            }
+        });*/
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://6007f1a4309f8b0017ee5022.mockapi.io/api/m1/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -66,5 +122,6 @@ public class MainActivity extends AppCompatActivity {
                         data.setText(t.getMessage());
                     }
                 });
+
     }
 }

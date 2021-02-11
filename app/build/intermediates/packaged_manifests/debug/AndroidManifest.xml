@@ -25,7 +25,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.API" >
-        <activity android:name="fr.gatens.api.Register" />
         <activity android:name="fr.gatens.api.MainActivity" />
         <activity android:name="fr.gatens.api.HomePage" >
             <intent-filter>

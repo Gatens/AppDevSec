@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomePage extends AppCompatActivity {
     EditText logEmail, logPassword;
-    Button logButton, register;
+    Button logButton;
 
     FirebaseAuth fAuth;
     ProgressBar logProgressBar;
@@ -35,8 +35,6 @@ public class HomePage extends AppCompatActivity {
         logPassword = findViewById(R.id.logPassword);
         fAuth= FirebaseAuth.getInstance();
         logButton=findViewById(R.id.logButton);
-        register=findViewById(R.id.register);
-        logProgressBar = findViewById(R.id.logProgressBar);
 
         logButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,8 +52,6 @@ public class HomePage extends AppCompatActivity {
                     return;
                 }
 
-                logProgressBar.setVisibility((View.VISIBLE));
-
                 // authenticate
 
                 fAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -70,13 +66,6 @@ public class HomePage extends AppCompatActivity {
                         }
                     }
                 });
-            }
-        });
-
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Register.class));
             }
         });
     }

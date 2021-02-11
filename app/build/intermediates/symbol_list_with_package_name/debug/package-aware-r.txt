@@ -1821,7 +1821,6 @@ id list_item
 id logButton
 id logEmail
 id logPassword
-id logProgressBar
 id logText
 id logoutButton
 id masked
@@ -1887,13 +1886,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id regButton
-id regLogButton
-id regProgressBar
-id reg_email
-id reg_password
-id reg_provider
-id register
 id reverseSawtooth
 id right
 id right_icon
@@ -1923,6 +1915,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id sendDB
 id shortcut
 id showCustom
 id showHome
@@ -2123,7 +2116,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout register
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2264,6 +2256,7 @@ string project_id
 string regLogButton
 string register
 string search_menu_title
+string sendDB
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
