@@ -4,7 +4,9 @@
     <string name="first_choice">Please login or register to enter in the App</string>
     <string name="register">Register</string>
     <string name="id_provider">Please provide your ID to register.</string>
-    <string name="username">Username</string>
+    <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="logout">Logout</string>
     <string name="bankpage">Bonjour, Veuillez trouver ci dessous la totalite de vos comptes enregistres sur notre application.</string>
+    <string name="regLogButton">ALready have an account? Login Here</string>
 </resources>

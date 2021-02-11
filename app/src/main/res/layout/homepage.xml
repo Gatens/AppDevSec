@@ -7,7 +7,7 @@
     tools:context=".HomePage">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/logButton"
         android:layout_width="115dp"
         android:layout_height="55dp"
         android:layout_marginBottom="40dp"
@@ -15,17 +15,17 @@
         app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/logPassword"
         app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/account_id"
+    <TextView
+        android:id="@+id/logText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:autofillHints=""
         android:hint="@string/first_choice"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/username"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,11 +41,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/logPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:text="@string/password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,16 +55,28 @@
         app:layout_constraintVertical_bias="0.676" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/logEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/username"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/logPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logText"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <ProgressBar
+        android:id="@+id/logProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        tools:visibility="invisible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

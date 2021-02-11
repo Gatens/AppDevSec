@@ -2,10 +2,13 @@ package fr.gatens.api;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,13 +22,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
     private TextView data;
 
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         data = findViewById(R.id.data);
-        View accountNumber = findViewById(R.id.account_id);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://6007f1a4309f8b0017ee5022.mockapi.io/api/m1/")

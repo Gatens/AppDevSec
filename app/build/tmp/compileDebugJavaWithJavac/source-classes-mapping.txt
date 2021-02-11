@@ -1,12 +1,19 @@
-fr/gatens/api/MainActivity.java
- fr.gatens.api.MainActivity
- fr.gatens.api.MainActivity$1
-fr/gatens/api/Post.java
- fr.gatens.api.Post
-fr/gatens/api/HomePage.java
- fr.gatens.api.HomePage
- fr.gatens.api.HomePage$1
 fr/gatens/api/BuildConfig.java
  fr.gatens.api.BuildConfig
 fr/gatens/api/APIRequest.java
  fr.gatens.api.APIRequest
+fr/gatens/api/Post.java
+ fr.gatens.api.Post
+fr/gatens/api/MainActivity.java
+ fr.gatens.api.MainActivity
+ fr.gatens.api.MainActivity$1
+fr/gatens/api/Register.java
+ fr.gatens.api.Register
+ fr.gatens.api.Register$1
+ fr.gatens.api.Register$1$1
+ fr.gatens.api.Register$2
+fr/gatens/api/HomePage.java
+ fr.gatens.api.HomePage
+ fr.gatens.api.HomePage$1
+ fr.gatens.api.HomePage$1$1
+ fr.gatens.api.HomePage$2
